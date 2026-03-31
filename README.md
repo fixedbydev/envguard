@@ -1,6 +1,6 @@
 # envguard
 
-[![CI](https://github.com/your-org/envguard/actions/workflows/ci.yml/badge.svg)](https://github.com/your-org/envguard/actions/workflows/ci.yml)
+[![CI](https://github.com/fixedbydev/envguard/actions/workflows/ci.yml/badge.svg)](https://github.com/fixedbydev/envguard/actions/workflows/ci.yml)
 [![npm version](https://img.shields.io/npm/v/@stacklance/envguard-core.svg)](https://www.npmjs.com/package/@stacklance/envguard-core)
 [![npm downloads](https://img.shields.io/npm/dm/@stacklance/envguard-core.svg)](https://www.npmjs.com/package/@stacklance/envguard-core)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
