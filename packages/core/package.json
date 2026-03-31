@@ -1,5 +1,5 @@
 {
-  "name": "@envguard/core",
+  "name": "@stacklance/envguard-core",
   "version": "0.1.0",
   "description": "Zod-based environment variable validation with type inference, .env loading, and watch mode",
   "license": "MIT",

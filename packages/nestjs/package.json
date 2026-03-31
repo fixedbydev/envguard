@@ -1,5 +1,5 @@
 {
-  "name": "@envguard/nestjs",
+  "name": "@stacklance/envguard-nestjs",
   "version": "0.1.0",
   "description": "NestJS dynamic module for Zod-based environment variable validation",
   "license": "MIT",
@@ -28,7 +28,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@envguard/core": "workspace:*"
+    "@stacklance/envguard-core": "workspace:*"
   },
   "peerDependencies": {
     "@nestjs/common": "^10.0.0 || ^11.0.0",

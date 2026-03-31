@@ -1,5 +1,5 @@
 {
-  "name": "@envguard/audit",
+  "name": "@stacklance/envguard-audit",
   "version": "0.1.0",
   "description": "Static analysis tool that audits process.env usage against a Zod schema",
   "license": "MIT",

@@ -1,8 +1,8 @@
 # envguard
 
 [![CI](https://github.com/your-org/envguard/actions/workflows/ci.yml/badge.svg)](https://github.com/your-org/envguard/actions/workflows/ci.yml)
-[![npm version](https://img.shields.io/npm/v/@envguard/core.svg)](https://www.npmjs.com/package/@envguard/core)
-[![npm downloads](https://img.shields.io/npm/dm/@envguard/core.svg)](https://www.npmjs.com/package/@envguard/core)
+[![npm version](https://img.shields.io/npm/v/@stacklance/envguard-core.svg)](https://www.npmjs.com/package/@stacklance/envguard-core)
+[![npm downloads](https://img.shields.io/npm/dm/@stacklance/envguard-core.svg)](https://www.npmjs.com/package/@stacklance/envguard-core)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 Zod-based environment variable validation for Node.js. Type-safe, runtime-validated, developer-friendly.
@@ -11,21 +11,21 @@ Zod-based environment variable validation for Node.js. Type-safe, runtime-valida
 
 | Package | Description |
 | --- | --- |
-| [`@envguard/core`](./packages/core) | Zod-based env validation library |
-| [`@envguard/cli`](./packages/cli) | CLI tool for validating and managing env files |
-| [`@envguard/audit`](./packages/audit) | Static analysis: audit process.env usage against schema |
-| [`@envguard/nestjs`](./packages/nestjs) | NestJS dynamic module integration |
+| [`@stacklance/envguard-core`](./packages/core) | Zod-based env validation library |
+| [`@stacklance/envguard-cli`](./packages/cli) | CLI tool for validating and managing env files |
+| [`@stacklance/envguard-audit`](./packages/audit) | Static analysis: audit process.env usage against schema |
+| [`@stacklance/envguard-nestjs`](./packages/nestjs) | NestJS dynamic module integration |
 
 ## Quick Start
 
 ### Core Library
 
 ```bash
-npm install @envguard/core zod
+npm install @stacklance/envguard-core zod
 ```
 
 ```ts
-import { guard } from '@envguard/core';
+import { guard } from '@stacklance/envguard-core';
 import { z } from 'zod';
 
 const env = guard({
@@ -47,7 +47,7 @@ const env = guard({
 ### CLI Tool
 
 ```bash
-npm install -g @envguard/cli
+npm install -g @stacklance/envguard-cli
 
 # Validate env against a schema
 env-guard check --path .env --schema ./env.schema.ts
@@ -65,11 +65,11 @@ env-guard fix
 ### Static Audit
 
 ```bash
-npm install @envguard/audit
+npm install @stacklance/envguard-audit
 ```
 
 ```ts
-import { audit } from '@envguard/audit';
+import { audit } from '@stacklance/envguard-audit';
 
 const result = await audit({
   dir: './src',
@@ -100,12 +100,12 @@ env-guard audit --dir ./apps/api ./apps/web --schema ./env.schema.ts
 ### NestJS Module
 
 ```bash
-npm install @envguard/nestjs @envguard/core zod
+npm install @stacklance/envguard-nestjs @stacklance/envguard-core zod
 ```
 
 ```ts
 import { Module } from '@nestjs/common';
-import { EnvGuardModule } from '@envguard/nestjs';
+import { EnvGuardModule } from '@stacklance/envguard-nestjs';
 import { z } from 'zod';
 
 @Module({
@@ -123,7 +123,7 @@ export class AppModule {}
 
 ```ts
 import { Injectable } from '@nestjs/common';
-import { EnvGuardService } from '@envguard/nestjs';
+import { EnvGuardService } from '@stacklance/envguard-nestjs';
 
 @Injectable()
 export class AppService {

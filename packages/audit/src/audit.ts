@@ -21,7 +21,7 @@ const DEFAULT_EXCLUDE = ['**/node_modules/**', '**/dist/**'];
  *
  * @example
  * ```ts
- * import { audit } from '@envguard/audit';
+ * import { audit } from '@stacklance/envguard-audit';
  *
  * const result = await audit({
  *   dir: './src',

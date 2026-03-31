@@ -1,6 +1,6 @@
 import type { ModuleMetadata, Type } from '@nestjs/common';
 import type { ZodRawShape } from 'zod';
-import type { GuardOptions } from '@envguard/core';
+import type { GuardOptions } from '@stacklance/envguard-core';
 
 /** Options for `EnvGuardModule.forRoot()`. */
 export interface EnvGuardModuleOptions {

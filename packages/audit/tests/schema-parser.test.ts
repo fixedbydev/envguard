@@ -50,7 +50,7 @@ export const schema = {
     writeFileSync(
       schemaPath,
       `import { z } from 'zod';
-import { guard } from '@envguard/core';
+import { guard } from '@stacklance/envguard-core';
 const env = guard({
   DATABASE_URL: z.string().url(),
   REDIS_HOST: z.string(),

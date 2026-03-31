@@ -1,5 +1,5 @@
 import { DynamicModule, Module, type Provider } from '@nestjs/common';
-import { guard } from '@envguard/core';
+import { guard } from '@stacklance/envguard-core';
 import { ENV_GUARD_ENV } from './constants.js';
 import { EnvGuardService } from './env-guard.service.js';
 import type {

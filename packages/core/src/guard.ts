@@ -41,7 +41,7 @@ export interface GuardResultWithWatcher<T> {
  *
  * @example
  * ```ts
- * import { guard } from '@envguard/core';
+ * import { guard } from '@stacklance/envguard-core';
  * import { z } from 'zod';
  *
  * const env = guard({

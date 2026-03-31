@@ -1,20 +1,20 @@
-# @envguard/audit
+# @stacklance/envguard-audit
 
 Static analysis tool that scans your codebase for `process.env` usage and audits it against your Zod schema. Catches undeclared env vars, unused schema keys, and dynamic access patterns — before they hit production.
 
 ## The Problem
 
-Your schema declares `PORT`, `DB_URL`, and `NODE_ENV`. But somewhere deep in `src/utils/cache.ts`, someone wrote `process.env.REDIS_URL` — and it's not in the schema. Your app boots fine in dev (the variable happens to be set), but fails in staging. @envguard/audit catches this at lint time.
+Your schema declares `PORT`, `DB_URL`, and `NODE_ENV`. But somewhere deep in `src/utils/cache.ts`, someone wrote `process.env.REDIS_URL` — and it's not in the schema. Your app boots fine in dev (the variable happens to be set), but fails in staging. @stacklance/envguard-audit catches this at lint time.
 
 ## Installation
 
 ```bash
-npm install @envguard/audit
+npm install @stacklance/envguard-audit
 ```
 
 ## CLI Usage
 
-The audit command is available via `@envguard/cli`:
+The audit command is available via `@stacklance/envguard-cli`:
 
 ```bash
 # Basic audit
@@ -33,7 +33,7 @@ env-guard audit --dir ./src --schema ./env.schema.ts --json
 ## Programmatic API
 
 ```ts
-import { audit } from '@envguard/audit';
+import { audit } from '@stacklance/envguard-audit';
 
 const result = await audit({
   dir: './src',

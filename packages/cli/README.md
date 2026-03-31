@@ -1,13 +1,13 @@
-# @envguard/cli
+# @stacklance/envguard-cli
 
 CLI tool for validating, diffing, masking, and fixing environment variables.
 
 ## Installation
 
 ```bash
-npm install -g @envguard/cli
+npm install -g @stacklance/envguard-cli
 # or use with npx
-npx @envguard/cli check
+npx @stacklance/envguard-cli check
 ```
 
 ## Commands

@@ -6,7 +6,7 @@ import {
   formatText,
   formatGitHub,
   formatJSON,
-} from '@envguard/audit';
+} from '@stacklance/envguard-audit';
 import { isCI } from '../utils.js';
 
 /**

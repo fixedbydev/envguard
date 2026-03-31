@@ -1,17 +1,17 @@
-# @envguard/core
+# @stacklance/envguard-core
 
 Zod-based environment variable validation with full TypeScript inference, `.env` file loading, watch mode, and pretty error output.
 
 ## Installation
 
 ```bash
-npm install @envguard/core zod
+npm install @stacklance/envguard-core zod
 ```
 
 ## Usage
 
 ```ts
-import { guard } from '@envguard/core';
+import { guard } from '@stacklance/envguard-core';
 import { z } from 'zod';
 
 const env = guard({
@@ -79,7 +79,7 @@ Automatically warns when keys differ between `.env` and `.env.example`:
 ## Error Handling
 
 ```ts
-import { guard, EnvGuardError } from '@envguard/core';
+import { guard, EnvGuardError } from '@stacklance/envguard-core';
 
 try {
   const env = guard(schema);

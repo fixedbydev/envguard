@@ -1,11 +1,11 @@
-# @envguard/nestjs
+# @stacklance/envguard-nestjs
 
 NestJS dynamic module for Zod-based environment variable validation.
 
 ## Installation
 
 ```bash
-npm install @envguard/nestjs @envguard/core zod
+npm install @stacklance/envguard-nestjs @stacklance/envguard-core zod
 ```
 
 ## Usage
@@ -14,7 +14,7 @@ npm install @envguard/nestjs @envguard/core zod
 
 ```ts
 import { Module } from '@nestjs/common';
-import { EnvGuardModule } from '@envguard/nestjs';
+import { EnvGuardModule } from '@stacklance/envguard-nestjs';
 import { z } from 'zod';
 
 @Module({
@@ -53,7 +53,7 @@ EnvGuardModule.forRootAsync({
 
 ```ts
 import { Injectable } from '@nestjs/common';
-import { EnvGuardService } from '@envguard/nestjs';
+import { EnvGuardService } from '@stacklance/envguard-nestjs';
 
 @Injectable()
 export class AppService {

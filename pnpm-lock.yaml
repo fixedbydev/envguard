@@ -51,10 +51,10 @@ importers:
 
   packages/cli:
     dependencies:
-      '@envguard/audit':
+      '@stacklance/envguard-audit':
         specifier: workspace:*
         version: link:../audit
-      '@envguard/core':
+      '@stacklance/envguard-core':
         specifier: workspace:*
         version: link:../core
       chalk:
@@ -86,7 +86,7 @@ importers:
 
   packages/nestjs:
     dependencies:
-      '@envguard/core':
+      '@stacklance/envguard-core':
         specifier: workspace:*
         version: link:../core
     devDependencies:

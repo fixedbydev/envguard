@@ -1,5 +1,5 @@
 import { readFileSync, existsSync, writeFileSync } from 'node:fs';
-import { isSensitive } from '@envguard/core';
+import { isSensitive } from '@stacklance/envguard-core';
 
 /** Whether running in a CI environment. */
 export const isCI = Boolean(process.env['CI']);
