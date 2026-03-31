@@ -1,0 +1,38 @@
+{
+  "name": "@envguard/audit",
+  "version": "0.1.0",
+  "description": "Static analysis tool that audits process.env usage against a Zod schema",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": ["dist"],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "ts-morph": "^24.0.0"
+  },
+  "devDependencies": {
+    "zod": "^3.23.0"
+  },
+  "keywords": ["env", "environment", "audit", "static-analysis", "process.env", "zod"]
+}
